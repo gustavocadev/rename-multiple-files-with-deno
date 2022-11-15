@@ -1,4 +1,4 @@
-// @ts-ignore: decorator
+// @deno-types=npm:@types/inquirer
 import inquirer from 'npm:inquirer';
 import chalk from 'npm:chalk';
 import * as path from 'https://deno.land/std@0.164.0/path/mod.ts';
