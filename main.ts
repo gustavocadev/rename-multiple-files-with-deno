@@ -22,7 +22,7 @@ for await (const file of files) {
   // check if the file is a file
   if (file.isFile && file.name !== 'main.ts') {
     // change the file name
-    const fileExtension = file.name.split('.')[1];
+    const fileExtension = file.name.split('.').at(-1);
     await Deno.rename(
       path.join(address, file.name),
       path.join(address, i + `.${fileExtension}`)
@@ -30,3 +30,6 @@ for await (const file of files) {
     i++;
   }
 }
+
+console.log(chalk.green('All files have been renamed!'));
+Deno.exit(0);
