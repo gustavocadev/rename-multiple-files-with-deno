@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "start": "deno run -A main.ts"
+  },
+  "imports": {
+    "inquirer": "npm:inquirer@9.2.12",
+    "chalk": "npm:chalk@5.3.0",
+    "std/": "https://deno.land/std@0.209.0/"
+  }
+}
